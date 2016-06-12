@@ -51,7 +51,7 @@
 		FD8B763A1D09F3A70066751F /* TSNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNew.m; sourceTree = "<group>"; };
 		FD8C70131D0B722F002855D4 /* TSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewCell.h; sourceTree = "<group>"; };
 		FD8C70141D0B722F002855D4 /* TSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewCell.m; sourceTree = "<group>"; };
-		FDB148061CEA4E6500BED9FE /* Game news..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game news..app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB148061CEA4E6500BED9FE /* Game news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game news.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB1480A1CEA4E6500BED9FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDB1480C1CEA4E6500BED9FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDB1480D1CEA4E6500BED9FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,10 +61,10 @@
 		FDB148151CEA4E6700BED9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB148181CEA4E6800BED9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB1481A1CEA4E6800BED9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDB1481F1CEA4E7600BED9FE /* Game news.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game news.Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB1481F1CEA4E7600BED9FE /* Game news.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game news.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB148231CEA4E7900BED9FE /* Game_news_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game_news_Tests.m; sourceTree = "<group>"; };
 		FDB148251CEA4E7900BED9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDB1482A1CEA4E7900BED9FE /* Game news.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game news.UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB1482A1CEA4E7900BED9FE /* Game news.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game news.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB1482E1CEA4E7A00BED9FE /* Game_news_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game_news_UITests.m; sourceTree = "<group>"; };
 		FDB148301CEA4E7B00BED9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,9 +181,9 @@
 		FDB148071CEA4E6500BED9FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDB148061CEA4E6500BED9FE /* Game news..app */,
-				FDB1481F1CEA4E7600BED9FE /* Game news.Tests.xctest */,
-				FDB1482A1CEA4E7900BED9FE /* Game news.UITests.xctest */,
+				FDB148061CEA4E6500BED9FE /* Game news.app */,
+				FDB1481F1CEA4E7600BED9FE /* Game news.xctest */,
+				FDB1482A1CEA4E7900BED9FE /* Game news.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,9 +235,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDB148051CEA4E6500BED9FE /* Game news. */ = {
+		FDB148051CEA4E6500BED9FE /* Game news */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDB148331CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news." */;
+			buildConfigurationList = FDB148331CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news" */;
 			buildPhases = (
 				0ED71FE9B73457DDB7EB2527 /* 📦 Check Pods Manifest.lock */,
 				FDB148021CEA4E6500BED9FE /* Sources */,
@@ -250,14 +250,14 @@
 			);
 			dependencies = (
 			);
-			name = "Game news.";
+			name = "Game news";
 			productName = "Game news.";
-			productReference = FDB148061CEA4E6500BED9FE /* Game news..app */;
+			productReference = FDB148061CEA4E6500BED9FE /* Game news.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FDB1481E1CEA4E7600BED9FE /* Game news.Tests */ = {
+		FDB1481E1CEA4E7600BED9FE /* Game newsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDB148361CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news.Tests" */;
+			buildConfigurationList = FDB148361CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game newsTests" */;
 			buildPhases = (
 				FDB1481B1CEA4E7600BED9FE /* Sources */,
 				FDB1481C1CEA4E7600BED9FE /* Frameworks */,
@@ -268,14 +268,14 @@
 			dependencies = (
 				FDB148211CEA4E7600BED9FE /* PBXTargetDependency */,
 			);
-			name = "Game news.Tests";
+			name = "Game newsTests";
 			productName = "Game news.Tests";
-			productReference = FDB1481F1CEA4E7600BED9FE /* Game news.Tests.xctest */;
+			productReference = FDB1481F1CEA4E7600BED9FE /* Game news.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FDB148291CEA4E7900BED9FE /* Game news.UITests */ = {
+		FDB148291CEA4E7900BED9FE /* Game newsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDB148391CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news.UITests" */;
+			buildConfigurationList = FDB148391CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game newsUITests" */;
 			buildPhases = (
 				FDB148261CEA4E7900BED9FE /* Sources */,
 				FDB148271CEA4E7900BED9FE /* Frameworks */,
@@ -286,9 +286,9 @@
 			dependencies = (
 				FDB1482C1CEA4E7900BED9FE /* PBXTargetDependency */,
 			);
-			name = "Game news.UITests";
+			name = "Game newsUITests";
 			productName = "Game news.UITests";
-			productReference = FDB1482A1CEA4E7900BED9FE /* Game news.UITests.xctest */;
+			productReference = FDB1482A1CEA4E7900BED9FE /* Game news.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FDB148011CEA4E6400BED9FE /* Build configuration list for PBXProject "Game news." */;
+			buildConfigurationList = FDB148011CEA4E6400BED9FE /* Build configuration list for PBXProject "Game news" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -330,9 +330,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDB148051CEA4E6500BED9FE /* Game news. */,
-				FDB1481E1CEA4E7600BED9FE /* Game news.Tests */,
-				FDB148291CEA4E7900BED9FE /* Game news.UITests */,
+				FDB148051CEA4E6500BED9FE /* Game news */,
+				FDB1481E1CEA4E7600BED9FE /* Game newsTests */,
+				FDB148291CEA4E7900BED9FE /* Game newsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,12 +448,12 @@
 /* Begin PBXTargetDependency section */
 		FDB148211CEA4E7600BED9FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDB148051CEA4E6500BED9FE /* Game news. */;
+			target = FDB148051CEA4E6500BED9FE /* Game news */;
 			targetProxy = FDB148201CEA4E7600BED9FE /* PBXContainerItemProxy */;
 		};
 		FDB1482C1CEA4E7900BED9FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDB148051CEA4E6500BED9FE /* Game news. */;
+			target = FDB148051CEA4E6500BED9FE /* Game news */;
 			targetProxy = FDB1482B1CEA4E7900BED9FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -570,7 +570,7 @@
 				INFOPLIST_FILE = "Game news./Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Game news";
 			};
 			name = Debug;
 		};
@@ -582,7 +582,7 @@
 				INFOPLIST_FILE = "Game news./Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Game news";
 			};
 			name = Release;
 		};
@@ -593,8 +593,8 @@
 				INFOPLIST_FILE = "Game news.Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game news..app/Game news.";
+				PRODUCT_NAME = "Game news";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game news.app/Game news";
 			};
 			name = Debug;
 		};
@@ -605,8 +605,8 @@
 				INFOPLIST_FILE = "Game news.Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game news..app/Game news.";
+				PRODUCT_NAME = "Game news";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game news.app/Game news";
 			};
 			name = Release;
 		};
@@ -616,7 +616,7 @@
 				INFOPLIST_FILE = "Game news.UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Game news";
 				TEST_TARGET_NAME = "Game news.";
 			};
 			name = Debug;
@@ -627,7 +627,7 @@
 				INFOPLIST_FILE = "Game news.UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsvigunalexandr.Game-news-UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Game news";
 				TEST_TARGET_NAME = "Game news.";
 			};
 			name = Release;
@@ -635,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDB148011CEA4E6400BED9FE /* Build configuration list for PBXProject "Game news." */ = {
+		FDB148011CEA4E6400BED9FE /* Build configuration list for PBXProject "Game news" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDB148311CEA4E7B00BED9FE /* Debug */,
@@ -644,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDB148331CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news." */ = {
+		FDB148331CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDB148341CEA4E7B00BED9FE /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDB148361CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news.Tests" */ = {
+		FDB148361CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game newsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDB148371CEA4E7B00BED9FE /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDB148391CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game news.UITests" */ = {
+		FDB148391CEA4E7B00BED9FE /* Build configuration list for PBXNativeTarget "Game newsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDB1483A1CEA4E7B00BED9FE /* Debug */,

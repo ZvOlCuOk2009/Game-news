@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDB148051CEA4E6500BED9FE"
-               BuildableName = "Game news..app"
-               BlueprintName = "Game news."
-               ReferencedContainer = "container:Game news..xcodeproj">
+               BuildableName = "Game news.app"
+               BlueprintName = "Game news"
+               ReferencedContainer = "container:Game news.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDB1481E1CEA4E7600BED9FE"
-               BuildableName = "Game news.Tests.xctest"
-               BlueprintName = "Game news.Tests"
-               ReferencedContainer = "container:Game news..xcodeproj">
+               BuildableName = "Game news.xctest"
+               BlueprintName = "Game newsTests"
+               ReferencedContainer = "container:Game news.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDB148291CEA4E7900BED9FE"
-               BuildableName = "Game news.UITests.xctest"
-               BlueprintName = "Game news.UITests"
-               ReferencedContainer = "container:Game news..xcodeproj">
+               BuildableName = "Game news.xctest"
+               BlueprintName = "Game newsUITests"
+               ReferencedContainer = "container:Game news.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDB148051CEA4E6500BED9FE"
-            BuildableName = "Game news..app"
-            BlueprintName = "Game news."
-            ReferencedContainer = "container:Game news..xcodeproj">
+            BuildableName = "Game news.app"
+            BlueprintName = "Game news"
+            ReferencedContainer = "container:Game news.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDB148051CEA4E6500BED9FE"
-            BuildableName = "Game news..app"
-            BlueprintName = "Game news."
-            ReferencedContainer = "container:Game news..xcodeproj">
+            BuildableName = "Game news.app"
+            BlueprintName = "Game news"
+            ReferencedContainer = "container:Game news.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDB148051CEA4E6500BED9FE"
-            BuildableName = "Game news..app"
-            BlueprintName = "Game news."
-            ReferencedContainer = "container:Game news..xcodeproj">
+            BuildableName = "Game news.app"
+            BlueprintName = "Game news"
+            ReferencedContainer = "container:Game news.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
