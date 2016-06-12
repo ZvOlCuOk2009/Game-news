@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSSTabbedPageViewController.h"
 
-@interface ViewController : UIViewController
+@interface TSNewsViewController : MSSTabbedPageViewController
 
 
 @end
