@@ -20,6 +20,9 @@
 		FDB148191CEA4E6800BED9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB148171CEA4E6800BED9FE /* LaunchScreen.storyboard */; };
 		FDB148241CEA4E7900BED9FE /* Game_news_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB148231CEA4E7900BED9FE /* Game_news_Tests.m */; };
 		FDB1482F1CEA4E7A00BED9FE /* Game_news_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB1482E1CEA4E7A00BED9FE /* Game_news_UITests.m */; };
+		FDBB9EB41D0EF87B00B69CBF /* TSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB9EB31D0EF87B00B69CBF /* TSLabel.m */; };
+		FDBB9EBC1D0F098100B69CBF /* UIImage+TSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */; };
+		FDE956C41D0F57D6005B69CB /* TSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE956C31D0F57D6005B69CB /* TSImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		FDB1482A1CEA4E7900BED9FE /* Game news.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game news.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB1482E1CEA4E7A00BED9FE /* Game_news_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game_news_UITests.m; sourceTree = "<group>"; };
 		FDB148301CEA4E7B00BED9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDBB9EB21D0EF87B00B69CBF /* TSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLabel.h; sourceTree = "<group>"; };
+		FDBB9EB31D0EF87B00B69CBF /* TSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLabel.m; sourceTree = "<group>"; };
+		FDBB9EBA1D0F098100B69CBF /* UIImage+TSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TSImage.h"; sourceTree = "<group>"; };
+		FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TSImage.m"; sourceTree = "<group>"; };
+		FDE956C21D0F57D6005B69CB /* TSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImageView.h; sourceTree = "<group>"; };
+		FDE956C31D0F57D6005B69CB /* TSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,8 @@
 			children = (
 				FD7E45DC1D0CD15400CBA6C0 /* NSString+TSFormatingDate.h */,
 				FD7E45DD1D0CD15400CBA6C0 /* NSString+TSFormatingDate.m */,
+				FDBB9EBA1D0F098100B69CBF /* UIImage+TSImage.h */,
+				FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -169,7 +180,7 @@
 		FDB147FD1CEA4E6400BED9FE = {
 			isa = PBXGroup;
 			children = (
-				FDB148081CEA4E6500BED9FE /* Game news. */,
+				FDB148081CEA4E6500BED9FE /* Game news */,
 				FDB148221CEA4E7700BED9FE /* Game news.Tests */,
 				FDB1482D1CEA4E7A00BED9FE /* Game news.UITests */,
 				FDB148071CEA4E6500BED9FE /* Products */,
@@ -188,12 +199,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDB148081CEA4E6500BED9FE /* Game news. */ = {
+		FDB148081CEA4E6500BED9FE /* Game news */ = {
 			isa = PBXGroup;
 			children = (
 				FD8B76331D09AB640066751F /* App */,
 				FD8B76381D09F3760066751F /* Model */,
 				FD8B76341D09AD1C0066751F /* Data Manager */,
+				FDBB9EB51D0EF88600B69CBF /* Label */,
+				FDBB9EB61D0F083100B69CBF /* ImageView */,
 				FD8C70121D0B71E3002855D4 /* Cell */,
 				FD8B76321D09AB4E0066751F /* Controller */,
 				FD7E45D81D0CCFCA00CBA6C0 /* Category */,
@@ -203,6 +216,7 @@
 				FDB1481A1CEA4E6800BED9FE /* Info.plist */,
 				FDB148091CEA4E6500BED9FE /* Supporting Files */,
 			);
+			name = "Game news";
 			path = "Game news.";
 			sourceTree = "<group>";
 		};
@@ -230,6 +244,24 @@
 				FDB148301CEA4E7B00BED9FE /* Info.plist */,
 			);
 			path = "Game news.UITests";
+			sourceTree = "<group>";
+		};
+		FDBB9EB51D0EF88600B69CBF /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB9EB21D0EF87B00B69CBF /* TSLabel.h */,
+				FDBB9EB31D0EF87B00B69CBF /* TSLabel.m */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		FDBB9EB61D0F083100B69CBF /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FDE956C21D0F57D6005B69CB /* TSImageView.h */,
+				FDE956C31D0F57D6005B69CB /* TSImageView.m */,
+			);
+			name = ImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,8 +452,11 @@
 				FD8B763B1D09F3A70066751F /* TSNew.m in Sources */,
 				FDB148111CEA4E6500BED9FE /* TSNewsViewController.m in Sources */,
 				FD8C70151D0B722F002855D4 /* TSTableViewCell.m in Sources */,
+				FDBB9EB41D0EF87B00B69CBF /* TSLabel.m in Sources */,
+				FDBB9EBC1D0F098100B69CBF /* UIImage+TSImage.m in Sources */,
 				FDB1480E1CEA4E6500BED9FE /* AppDelegate.m in Sources */,
 				FD7E45DE1D0CD15400CBA6C0 /* NSString+TSFormatingDate.m in Sources */,
+				FDE956C41D0F57D6005B69CB /* TSImageView.m in Sources */,
 				FD8B76371D09AD670066751F /* TSServerManager.m in Sources */,
 				FDB1480B1CEA4E6500BED9FE /* main.m in Sources */,
 			);

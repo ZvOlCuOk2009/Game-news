@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

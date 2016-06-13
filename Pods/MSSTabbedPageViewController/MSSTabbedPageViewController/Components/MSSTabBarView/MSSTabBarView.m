@@ -107,7 +107,7 @@ static MSSTabBarCollectionViewCell *_sizingCell;
     _selectionIndicatorHeight = MSSTabBarViewDefaultTabIndicatorHeight;
     _selectionIndicatorView = [UIView new];
     _tabIndicatorColor = self.tintColor;
-    _tabTextColor = [UIColor blackColor];
+    _tabTextColor = [UIColor whiteColor];
     
     _tabOffset = MSSTabBarViewTabOffsetInvalid;
 }
