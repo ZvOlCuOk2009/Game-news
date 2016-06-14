@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MSSTabbedPageViewController.h"
 
-@interface TSNewsViewController : MSSTabbedPageViewController <MSSTabBarViewDataSource, MSSTabBarViewDelegate>
+@interface TSNewsViewController : MSSTabbedPageViewController 
 
 @end
 

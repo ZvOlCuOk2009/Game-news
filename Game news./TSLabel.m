@@ -10,7 +10,8 @@
 
 @implementation TSLabel
 
-- (id)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font
+- (id)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color
+               font:(UIFont *)font atLine:(NSInteger)line
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -18,7 +19,12 @@
         self.text = text;
         self.textColor = color;
         self.font = font;
+        self.lineBreakMode = NSLineBreakByWordWrapping;
+        self.numberOfLines = line;
     }
     return self;
 }
 @end
+
+
+

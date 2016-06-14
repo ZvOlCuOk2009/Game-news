@@ -21,8 +21,8 @@
 
 @interface TSNewsViewController () <UINavigationControllerDelegate, UIScrollViewDelegate, MSSTabBarViewDataSource, MSSTabBarViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *arrayNews;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -36,13 +36,14 @@
     
     self.arrayNews = [NSMutableArray array];
     [self getNewsFromServer];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.translucent = NO;
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 140, 0);
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"]
                                                                              style:UIBarButtonItemStylePlain
@@ -132,17 +133,20 @@
             TSLabel *title = [[TSLabel alloc] initWithFrame:CGRectMake(8, scrollImageView.frame.size.height / 2, scrollImageView.frame.size.width - 16, scrollImageView.frame.size.height / 3)
                                                        text:post.name
                                                   textColor:[UIColor whiteColor]
-                                                       font:[UIFont boldSystemFontOfSize:20.0]];
+                                                       font:[UIFont boldSystemFontOfSize:20.0]
+                                                     atLine:0];
             
             TSLabel *link = [[TSLabel alloc] initWithFrame:CGRectMake(8, (scrollImageView.frame.size.height / 2) + 50, scrollImageView.frame.size.width / 2, scrollImageView.frame.size.height / 4)
                                                       text:post.link
                                                  textColor:[UIColor blueColor]
-                                                      font:[UIFont systemFontOfSize:10.0]];
+                                                      font:[UIFont systemFontOfSize:10.0]
+                                                    atLine:1];
             
-            TSLabel *date = [[TSLabel alloc] initWithFrame:CGRectMake((scrollImageView.frame.size.width / 2) + 10, (scrollImageView.frame.size.height / 2) + 50, scrollImageView.frame.size.width / 2, scrollImageView.frame.size.height / 4)
+            TSLabel *date = [[TSLabel alloc] initWithFrame:CGRectMake((scrollImageView.frame.size.width / 2) + 30, (scrollImageView.frame.size.height / 2) + 50, scrollImageView.frame.size.width / 2, scrollImageView.frame.size.height / 4)
                                                       text:[NSString stringFormatingDate:post.date]
                                                  textColor:[UIColor whiteColor]
-                                                      font:[UIFont systemFontOfSize:10.0]];
+                                                      font:[UIFont systemFontOfSize:10.0]
+                                                    atLine:1];
             
             [scrollImageView addSubview:title];
             [scrollImageView addSubview:link];
@@ -192,8 +196,6 @@
     return  height;
 }
 
-#pragma mark -  UIScrollViewDelegate
-
 #pragma mark - Library
 
 - (NSArray *)viewControllersForPageViewController:(MSSPageViewController *)pageViewController
@@ -211,7 +213,7 @@
 {
     for (int i = 0; i < 3; i++) {
         if (index == 0) {
-            tab.title = @"   News    ";
+            tab.title = @"  Stories  ";
         } else if (index == 1) {
             tab.title = @"       Video ";
         } else if (index == 2) {
@@ -221,7 +223,7 @@
 }
 
 - (NSInteger)numberOfItemsForTabBarView:(MSSTabBarView *)tabBarView {
-    return self.viewControllers.count;
+    return 3;
 }
 
 @end

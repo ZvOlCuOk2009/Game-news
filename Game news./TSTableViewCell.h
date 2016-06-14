@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSLabel.h"
+#import "TSNew.h"
 
 @interface TSTableViewCell : UITableViewCell
 
@@ -15,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+//+ (TSLabel *)titleLabel:(TSTableViewCell *)cell post:(TSNew *)post;
 
 @end

@@ -11,6 +11,7 @@
 
 @interface TSLabel : UILabel
 
-- (id)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font;
+- (id)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color
+               font:(UIFont *)font atLine:(NSInteger)line;
 
 @end
