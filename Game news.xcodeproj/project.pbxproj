@@ -22,6 +22,7 @@
 		FDB1482F1CEA4E7A00BED9FE /* Game_news_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB1482E1CEA4E7A00BED9FE /* Game_news_UITests.m */; };
 		FDBB9EB41D0EF87B00B69CBF /* TSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB9EB31D0EF87B00B69CBF /* TSLabel.m */; };
 		FDBB9EBC1D0F098100B69CBF /* UIImage+TSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */; };
+		FDD934041D1211BC00E3946D /* TSCountLinesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934031D1211BC00E3946D /* TSCountLinesLabel.m */; };
 		FDE956C41D0F57D6005B69CB /* TSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE956C31D0F57D6005B69CB /* TSImageView.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		FDBB9EB31D0EF87B00B69CBF /* TSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLabel.m; sourceTree = "<group>"; };
 		FDBB9EBA1D0F098100B69CBF /* UIImage+TSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TSImage.h"; sourceTree = "<group>"; };
 		FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TSImage.m"; sourceTree = "<group>"; };
+		FDD934021D1211BC00E3946D /* TSCountLinesLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCountLinesLabel.h; sourceTree = "<group>"; };
+		FDD934031D1211BC00E3946D /* TSCountLinesLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCountLinesLabel.m; sourceTree = "<group>"; };
 		FDE956C21D0F57D6005B69CB /* TSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImageView.h; sourceTree = "<group>"; };
 		FDE956C31D0F57D6005B69CB /* TSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 				FD7E45DD1D0CD15400CBA6C0 /* NSString+TSFormatingDate.m */,
 				FDBB9EBA1D0F098100B69CBF /* UIImage+TSImage.h */,
 				FDBB9EBB1D0F098100B69CBF /* UIImage+TSImage.m */,
+				FDD934021D1211BC00E3946D /* TSCountLinesLabel.h */,
+				FDD934031D1211BC00E3946D /* TSCountLinesLabel.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD8B763B1D09F3A70066751F /* TSNew.m in Sources */,
+				FDD934041D1211BC00E3946D /* TSCountLinesLabel.m in Sources */,
 				FDB148111CEA4E6500BED9FE /* TSNewsViewController.m in Sources */,
 				FD8C70151D0B722F002855D4 /* TSTableViewCell.m in Sources */,
 				FDBB9EB41D0EF87B00B69CBF /* TSLabel.m in Sources */,

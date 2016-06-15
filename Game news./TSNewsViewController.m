@@ -17,18 +17,23 @@
 #import "UIImage+TSImage.h"
 #import "TSLabel.h"
 #import "TSImageView.h"
+#import "TSCountLinesLabel.h"
 
 
-@interface TSNewsViewController () <UINavigationControllerDelegate, UIScrollViewDelegate, MSSTabBarViewDataSource, MSSTabBarViewDelegate>
+@interface TSNewsViewController () <UINavigationControllerDelegate, UIScrollViewDelegate,
+                                    MSSTabBarViewDataSource, MSSTabBarViewDelegate>
 
-@property (strong, nonatomic) NSMutableArray *arrayNews;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *arrayNews;
+@property (strong, nonatomic) NSString *stringTitle;
+@property (strong, nonatomic) MSSPageViewController *pageViewController;
 
 @end
 
 @implementation TSNewsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self.navigationController setValue:[[MSSTabNavigationBar alloc]init] forKeyPath:@"navigationBar"];
@@ -37,10 +42,37 @@
     self.arrayNews = [NSMutableArray array];
     [self getNewsFromServer];
     
+    NSInteger weight = self.view.bounds.size.width - (self.view.bounds.size.width / 3);
+    CGRect frame = CGRectMake(self.view.bounds.origin.x + 20, 100, weight / 3, 30);
+    TSLabel *label = [[TSLabel alloc] initWithFrame:frame
+                                               text:@"Stories"
+                                          textColor:[UIColor whiteColor]
+                                               font:[UIFont systemFontOfSize:18]
+                                             atLine:1];
     
+    NSInteger weight2 = self.view.bounds.size.width - (self.view.bounds.size.width / 3);
+    CGRect frame2 = CGRectMake(165, 100, weight2 / 3, 30);
+    TSLabel *label2 = [[TSLabel alloc] initWithFrame:frame2
+                                               text:@"Video"
+                                          textColor:[UIColor lightGrayColor]
+                                               font:[UIFont systemFontOfSize:18]
+                                             atLine:1];
+    
+    NSInteger weight3 = self.view.bounds.size.width - (self.view.bounds.size.width / 3);
+    CGRect frame3 = CGRectMake(280, 100, weight3 / 3, 30);
+    TSLabel *label3 = [[TSLabel alloc] initWithFrame:frame3
+                                                text:@"Favourites"
+                                           textColor:[UIColor lightGrayColor]
+                                                font:[UIFont systemFontOfSize:18]
+                                              atLine:1];
+    
+    [self.navigationController.navigationBar addSubview:label];
+    [self.navigationController.navigationBar addSubview:label2];
+    [self.navigationController.navigationBar addSubview:label3];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.translucent = NO;
@@ -121,7 +153,7 @@
 {
     if (indexPath.row == 0) {
         
-        cell.scrollView.contentSize = CGSizeMake(cell.scrollView.bounds.size.width * [self.arrayNews count], cell.scrollView.bounds.size.height);
+        cell.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * [self.arrayNews count], cell.scrollView.bounds.size.height);
         
         for (int i = 0; i < [self.arrayNews count]; i++) {
             
@@ -173,6 +205,7 @@
                                        } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
                                            NSLog(@"Error - %@", [error localizedDescription]);
                                        }];
+        self.stringTitle = new.name;
     }
 }
 
@@ -191,7 +224,13 @@
     if (indexPath.row == 0) {
         height = 204;
     } else {
-        height = 264;
+        if ([TSCountLinesLabel lineCountForTitleLabel:self.stringTitle parenrView:self.view] == 1) {
+            height = 248;
+        } else if ([TSCountLinesLabel lineCountForTitleLabel:self.stringTitle parenrView:self.view] == 2) {
+            height = 271;
+        } else if ([TSCountLinesLabel lineCountForTitleLabel:self.stringTitle parenrView:self.view] == 3) {
+            height = 294;
+        }
     }
     return  height;
 }
@@ -200,11 +239,11 @@
 
 - (NSArray *)viewControllersForPageViewController:(MSSPageViewController *)pageViewController
 {
-    UIViewController *controller = [[UIViewController alloc] init];
-    UIViewController *controller2 = [[UIViewController alloc] init];
-    UIViewController *controller3 = [[UIViewController alloc] init];
+    UIViewController *controllerOne = [[UIViewController alloc] init];
+    UIViewController *controllerTwo = [[UIViewController alloc] init];
+    UIViewController *controllerThree = [[UIViewController alloc] init];
     
-    NSArray *controllers = @[controller, controller2, controller3];
+    NSArray *controllers = @[controllerOne, controllerTwo, controllerThree];
     
     return controllers;
 }
@@ -213,17 +252,18 @@
 {
     for (int i = 0; i < 3; i++) {
         if (index == 0) {
-            tab.title = @"  Stories  ";
+            tab.title = @"Stories";
         } else if (index == 1) {
-            tab.title = @"       Video ";
+            tab.title = @"              Video";
         } else if (index == 2) {
-            tab.title = @"      Favorites";
+            tab.title = @"              Favorites";
         }
     }
 }
 
-- (NSInteger)numberOfItemsForTabBarView:(MSSTabBarView *)tabBarView {
-    return 3;
+- (NSInteger)numberOfItemsForTabBarView:(MSSTabBarView *)tabBarView
+{
+    return 0;//[[self viewControllersForPageViewController:self.pageViewController] count];
 }
 
 @end

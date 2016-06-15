@@ -18,6 +18,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-//+ (TSLabel *)titleLabel:(TSTableViewCell *)cell post:(TSNew *)post;
-
 @end
