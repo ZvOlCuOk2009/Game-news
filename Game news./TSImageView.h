@@ -12,6 +12,7 @@
 @interface TSImageView : UIImageView
 
 - (id)initWithCellAtIndex:(TSTableViewCell *)cell atIndex:(NSInteger)i;
+
 - (id)initWithCellTheImage:(TSTableViewCell *)cell;
 
 @end
